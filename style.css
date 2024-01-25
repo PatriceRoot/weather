@@ -47,7 +47,7 @@ body{
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .weather_icon{
@@ -80,10 +80,10 @@ body{
     text-align: left;
 }
 
-.col img{
+/* .col img{
     width: 40px;
     margin-right: 10px;
-}
+} */
 
 .humidity, .wind{
     font-size: 28px;
@@ -100,5 +100,4 @@ body{
     text-align: left;
     font-size: 14px;
     display: none;
-
 }
