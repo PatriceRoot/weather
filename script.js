@@ -33,7 +33,6 @@ const apiKey = '24ad9e8e90e09e00659e7d5290429afd';
                 //     weatherIcon.src = 'images/mist.png';
                 // }
             }
-
             }
         searchBtn.addEventListener('click', ()=>{
             checkWeather(searchBox.value)
