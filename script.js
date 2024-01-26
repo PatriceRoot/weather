@@ -20,6 +20,7 @@ const apiKey = '24ad9e8e90e09e00659e7d5290429afd';
                 document.querySelector('.weather').style.display = 'block'
                 document.querySelector('.error').style.display = 'none'
 
+                //Code pour chosir l'image selon le temps qu'il fait
                 // if (data.weather[0].main=='Clouds') {
                 //     weatherIcon.src = 'images/clouds.png';
                 // }else if (data.weather[0].main=='Clear') {
