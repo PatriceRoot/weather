@@ -20,6 +20,7 @@ async function checkWeather(city){
     } else{
         // Sinon, conversion de la réponse en objet JSON
         const data = await response.json();
+        
         // console.log(data);
         // Affichage du nom de la ville, de la température, de l'humidité et de la vitesse du vent dans les éléments HTML correspondants
         document.querySelector('.city').innerHTML = data.name;
