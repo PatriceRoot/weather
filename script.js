@@ -22,12 +22,10 @@ async function checkWeather(city){
         const data = await response.json();
         
         // console.log(data);
-        // Affichage du nom de la ville, de la température, de l'humidité et de la vitesse du vent dans les éléments HTML correspondants
         document.querySelector('.city').innerHTML = data.name;
         document.querySelector('.temp').innerHTML = Math.round(data.main.temp) +'°c';
         document.querySelector('.humidity').innerHTML = data.main.humidity +'%';
         document.querySelector('.wind').innerHTML = data.wind.speed + ' km/h';
-        // Affichage de la section météo et masquage du message d'erreur
         document.querySelector('.weather').style.display = 'block'
         document.querySelector('.error').style.display = 'none'
 
@@ -48,8 +46,6 @@ async function checkWeather(city){
     }
 }
 
-// Ajout d'un écouteur d'événement sur le bouton de recherche
-// Quand le bouton est cliqué, on appelle la fonction checkWeather avec la valeur de la zone de saisie
 searchBtn.addEventListener('click', ()=>{
     checkWeather(searchBox.value)
 })
