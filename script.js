@@ -1,6 +1,4 @@
-// Déclaration de la clé d'API pour accéder à l'API OpenWeatherMap
 const apiKey = '24ad9e8e90e09e00659e7d5290429afd';
-// Déclaration de l'URL de base de l'API avec le paramètre d'unité métrique et de recherche par nom de ville
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=';
 
 // Sélection des éléments HTML correspondant à la zone de saisie, au bouton de recherche et à l'icône météo
